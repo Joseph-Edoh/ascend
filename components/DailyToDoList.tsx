@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { DailyTask } from '../types';
 import { Plus, GripVertical, Check, Trash2, ChevronDown, ChevronRight, Clock } from 'lucide-react';
 

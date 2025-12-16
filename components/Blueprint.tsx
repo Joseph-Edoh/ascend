@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { YearAspirations, PlannerItem, PlannerPriority, PlannerStatus } from '../types';
-import { Plus, Trash2, ArrowUpDown, Calendar, User, AlignLeft } from 'lucide-react';
+import { Plus, Trash2, ArrowUpDown, Calendar, User, AlignLeft, CheckCircle2, Clock, AlertOctagon } from 'lucide-react';
 
 interface BlueprintProps {
   aspirations: YearAspirations;
@@ -99,7 +99,7 @@ export const Blueprint: React.FC<BlueprintProps> = ({
             title="What I want to Do" 
             placeholder="Travel to Japan, Run a Marathon..." 
             value={aspirations.do}
-            onChange={(v: string) => onAspirationChange('do', v)}
+            onChange={(v) => onAspirationChange('do', v)}
             gradient="from-blue-500/10 to-cyan-500/5"
             borderColor="focus-within:border-blue-500/50"
           />
@@ -107,7 +107,7 @@ export const Blueprint: React.FC<BlueprintProps> = ({
             title="What I want to Have" 
             placeholder="Financial freedom, A new home studio..." 
             value={aspirations.have}
-            onChange={(v: string) => onAspirationChange('have', v)}
+            onChange={(v) => onAspirationChange('have', v)}
             gradient="from-purple-500/10 to-pink-500/5"
             borderColor="focus-within:border-purple-500/50"
           />
@@ -115,7 +115,7 @@ export const Blueprint: React.FC<BlueprintProps> = ({
             title="What I want to Be" 
             placeholder="A compassionate leader, A master architect..." 
             value={aspirations.be}
-            onChange={(v: string) => onAspirationChange('be', v)}
+            onChange={(v) => onAspirationChange('be', v)}
             gradient="from-amber-500/10 to-orange-500/5"
             borderColor="focus-within:border-amber-500/50"
           />
@@ -123,7 +123,7 @@ export const Blueprint: React.FC<BlueprintProps> = ({
             title="How I want to Live" 
             placeholder="With intention, Surrounded by nature..." 
             value={aspirations.live}
-            onChange={(v: string) => onAspirationChange('live', v)}
+            onChange={(v) => onAspirationChange('live', v)}
             gradient="from-emerald-500/10 to-teal-500/5"
             borderColor="focus-within:border-emerald-500/50"
           />

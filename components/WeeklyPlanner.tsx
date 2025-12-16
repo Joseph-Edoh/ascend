@@ -30,7 +30,7 @@ export const WeeklyPlanner: React.FC<WeeklyPlannerProps> = ({
     const diff = today.getDate() - currentDay + (currentDay === 0 ? -6 : 1); 
     const monday = new Date(today.setDate(diff + (offset * 7)));
     
-    const week = [];
+    const week: Date[] = [];
     for (let i = 0; i < 7; i++) {
       const day = new Date(monday);
       day.setDate(monday.getDate() + i);

@@ -3,7 +3,7 @@ import { AreaChart, Area, XAxis, YAxis, Tooltip, ResponsiveContainer, PieChart, 
 import { Goal, GoalStatus, Timeframe, DailyTask } from '../types';
 import { GoalCard } from './GoalCard';
 import { DailyToDoList } from './DailyToDoList';
-import { Zap, Target, ArrowUp } from 'lucide-react';
+import { Zap, Trophy, Target, ArrowUp } from 'lucide-react';
 
 interface DashboardProps {
   goals: Goal[];
